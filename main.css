@@ -1,13 +1,19 @@
 :root {
-    --jungle-color-blue: #0267b1;
-    --jungle-color-orange: #fbb81d;
+    --jungle-color-blue: #a7ceeb;
+    --jungle-color-deepblue: #033861;
+    --jungle-color-orange: #750202;
 }
 .w3-junglebus {
     color: var(--jungle-color-orange);
     background-color: var(--jungle-color-blue) !important;
 }
+
+.w3-jungledeepbus {
+    color: var(--jungle-color-orange);
+    background-color: var(--jungle-color-deepblue) !important;
+}
 .w3-text-junglebus {
-    color: var(--jungle-color-blue) !important;
+    color: var(--jungle-color-deepblue) !important;
 }
 
 
