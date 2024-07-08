@@ -1,20 +1,22 @@
 :root {
-    --jungle-color-blue: #a7ceeb;
-    --jungle-color-deepblue: #033861;
-    --jungle-color-orange: #750202;
+    --jungle-color-blue: #0267b1;
+    --jungle-color-lightblue: #99caee;
+    --jungle-color-orange: #fbb81d;
+    --jungle-color-red: #cd1534;
 }
 .w3-junglebus {
     color: var(--jungle-color-orange);
     background-color: var(--jungle-color-blue) !important;
 }
 
-.w3-jungledeepbus {
-    color: var(--jungle-color-orange);
-    background-color: var(--jungle-color-deepblue) !important;
+.w3-junglelightbus {
+    color: var(--jungle-color-red);
+    background-color: var(--jungle-color-lightblue) !important;
 }
 .w3-text-junglebus {
-    color: var(--jungle-color-deepblue) !important;
+    color: var(--jungle-color-blue) !important;
 }
+
 
 
 .stop_dot {
@@ -39,4 +41,27 @@
     border-left-color: #000;
     height: 26px;
     box-sizing: content-box;
+}
+
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allows logos to wrap to the next line on small screens */
+    padding: 10px; /* Padding around the logo container */
+    gap: 10px; /* Space between the logos */
+}
+
+.logo {
+    height: 50px; /* Reduced size */
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+    .logo {
+        height: 40px; /* Further reduce size on small screens */
+        margin: 5px; /* Reduce margin on small screens */
+    }
 }
