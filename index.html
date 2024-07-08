@@ -8,13 +8,41 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://unpkg.com/tabulator-tables@4.6.3/dist/css/materialize/tabulator_materialize.min.css" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
+    <style>
+      @media (max-width: 768px) {
+        header {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        header > div {
+          justify-content: center;
+          width: 100%;
+          text-align: center;
+        }
+        .w3-right {
+          justify-content: center;
+          margin-top: 10px;
+        }
+        .w3-right img {
+          margin-left: 5px;
+          margin-right: 5px;
+        }
+      }
+    </style>
   </head>
 
 <body class="w3-light-grey" onload="on_load()">
 
-  <header class="w3-container w3-junglebus">
-    <img src="img/Logo_Unroll.png" alt="Logo" class="w3-left w3-margin-right" style="height:80px">
-    <h1>Kerala City Transport Tracker</h1>
+  <header class="w3-container w3-junglebus" style="display: flex; align-items: center; justify-content: space-between;">
+    <div style="display: flex; align-items: center; flex: 1;">
+      <img src="img/Logo_Unroll.png" alt="Logo" class="w3-left w3-margin-right" style="height:80px">
+      <h1>Kerala City Transport Tracker</h1>
+    </div>
+    <div class="w3-right" style="display: flex; align-items: center; margin-top: 10px;">
+      <img src="img/odk_logo.png" alt="Logo1" style="height:80px; margin-left: 10px;">
+      <img src="img/gm_Logo.png" alt="Logo2" style="height:80px; margin-left: 10px;">
+      <img src="img/SDCF-Logo.png" alt="Logo3" style="height:80px; margin-left: 10px;">
+    </div>
   </header>
 
 <!-- Header -->

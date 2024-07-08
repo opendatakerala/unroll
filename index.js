@@ -230,7 +230,7 @@ function display_stats(lines){
         var template = `
         <div class="w3-row-padding w3-margin-bottom w3-margin-top">
         <div class="w3-quarter">
-            <div class="w3-container w3-junglebus w3-text-white w3-padding-16">
+            <div class="w3-container w3-jungledeepbus w3-text-white w3-padding-16">
             <div class="w3-left"><i class="fa fa-code-fork w3-xxxlarge"></i></div>
             <div class="w3-right">
                 <h3>${line_nb}</h3>
@@ -250,7 +250,7 @@ function display_stats(lines){
             </div>
         </div>
         <div class="w3-quarter">
-            <div class="w3-container w3-junglebus w3-text-white w3-padding-16">
+            <div class="w3-container w3-jungledeepbus w3-text-white w3-padding-16">
             <div class="w3-left"><i class="fa fa-home w3-xxxlarge"></i></div>
             <div class="w3-right">
                 <h3>${operators_nb}</h3>
